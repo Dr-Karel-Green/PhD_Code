@@ -11,8 +11,14 @@ from astropy.table import Table
 import matplotlib.pyplot as plt
 from math import exp, pi
 from scipy.interpolate import interp1d
-#%% Functions
 
+"""
+Note that the true version of this code actually loops through all galaxies 
+I had in my dataset to produce the light curve, likelihood curve, variability
+amplitude and error. This way you only needs to run the code once.
+
+"""
+#%% Functions
 def percent_err(arr, err, new):
     frac = np.divide(err, arr)
     out = np.multiply(frac, new)
