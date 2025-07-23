@@ -24,7 +24,7 @@ def percent_var(arr):
     percent = np.round(percent, 2)
     return percent
 
-fp = '/Volumes/Cherry/PhD/Cleaned_UP/Fig_3.2/data/'
+fp = '[Redacted]'
 #%% Data 
 files_all = np.sort(os.listdir(fp+'Knew/'))
 sigma_rng = np.arange(0, 1.01, 0.01)
