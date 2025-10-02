@@ -50,3 +50,12 @@ plt.legend()
 plt.savefig('fig_4.3.pdf', bbox_inches='tight')
 plt.show()
 
+#%% P-values for distribution comparison in text
+x_v = (ks_2samp(mass_x, mass_v))[1]
+x_xv = (ks_2samp(mass_x, mass_xv))[1]
+v_xv = (ks_2samp(mass_v, mass_xv))[1]
+
+print('P-Value (Xray, Var):', x_v)
+print('P-Value (X, xray_var):', x_xv)
+print('P-Value (Var, xray_var):', v_xv)
+
